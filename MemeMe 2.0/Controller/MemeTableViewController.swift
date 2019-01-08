@@ -46,7 +46,7 @@ extension MemeTableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell", for: indexPath) as! MemeTableViewCell
         let meme: Meme = appDelegate.memes[indexPath.row]
-        cell.setMeme(cell: meme)
+        cell.fillCell(meme)
         return cell
     }
     
