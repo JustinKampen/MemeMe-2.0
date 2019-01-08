@@ -36,12 +36,12 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         subscribeToKeyboardNotifications()
-        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         imageView.image != nil ? navigationBarButtons(enabled: true) : navigationBarButtons(enabled: false)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         configureMeme()
     }
     

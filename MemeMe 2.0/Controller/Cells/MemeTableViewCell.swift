@@ -20,9 +20,9 @@ class MemeTableViewCell: UITableViewCell {
 
     // MARK: Setup Table View Cell
     
-    func setMeme(cell: Meme) {
-        memeImageView.image = cell.originalImage
-        memeTopLabel.text = cell.topText
-        memeBottomLabel.text = cell.bottomText
+    func fillCell(_ meme: Meme) {
+        memeImageView.image = meme.originalImage
+        memeTopLabel.text = meme.topText
+        memeBottomLabel.text = meme.bottomText
     }
 }
