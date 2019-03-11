@@ -51,15 +51,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2975CB1421EFE4B500143F3A /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				2945970421E3E4F20026AE85 /* Alerts.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		2975CB1521EFE4D200143F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0D64F3F21DCA02200AD1A9D /* Main.storyboard */,
+				D0D64F4421DCA02300AD1A9D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2975CB1621EFE4EB00143F3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29EA648421DEDDD100DEB70E /* impact.ttf */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		299847CF21DD2F5100F0CC88 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2975CB1421EFE4B500143F3A /* Alerts */,
+				D07F982C21E3372800192D05 /* Cells */,
 				D0D64F4D21DCA04800AD1A9D /* MemeEditorViewController.swift */,
 				D028FA3121DF39CF006E335E /* MemeDetailViewController.swift */,
 				D0D64F5321DCA08C00AD1A9D /* MemeTableViewController.swift */,
 				D0D64F5121DCA06700AD1A9D /* MemeCollectionViewController.swift */,
-				2945970421E3E4F20026AE85 /* Alerts.swift */,
-				D07F982C21E3372800192D05 /* Cells */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -68,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				D0D64F5721DCA43E00AD1A9D /* Meme.swift */,
-				D0D64F3B21DCA02200AD1A9D /* AppDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,13 +125,13 @@
 		D0D64F3A21DCA02200AD1A9D /* MemeMe 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				299847D021DD2F5B00F0CC88 /* Model */,
-				299847CF21DD2F5100F0CC88 /* Controller */,
-				D0D64F3F21DCA02200AD1A9D /* Main.storyboard */,
-				D0D64F4221DCA02300AD1A9D /* Assets.xcassets */,
-				29EA648421DEDDD100DEB70E /* impact.ttf */,
-				D0D64F4421DCA02300AD1A9D /* LaunchScreen.storyboard */,
 				D0D64F4721DCA02300AD1A9D /* Info.plist */,
+				D0D64F3B21DCA02200AD1A9D /* AppDelegate.swift */,
+				299847D021DD2F5B00F0CC88 /* Model */,
+				2975CB1521EFE4D200143F3A /* View */,
+				299847CF21DD2F5100F0CC88 /* Controller */,
+				D0D64F4221DCA02300AD1A9D /* Assets.xcassets */,
+				2975CB1621EFE4EB00143F3A /* Supporting Files */,
 			);
 			path = "MemeMe 2.0";
 			sourceTree = "<group>";
