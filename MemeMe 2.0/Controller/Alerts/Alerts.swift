@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - Alerts
+// MARK: Alerts
 
 extension UIViewController {
     

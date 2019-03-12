@@ -8,17 +8,17 @@
 
 import UIKit
 
-// MARK: - MemeCollectionViewController: UIViewController
+// MARK: MemeCollectionViewController: UIViewController
 
 class MemeCollectionViewController: UIViewController {
     
-    // MARK: Outlets and Properties
+    // MARK: - Outlets and Properties
 
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class MemeCollectionViewController: UIViewController {
 
 extension MemeCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
-    // MARK: Collection View Methods
+    // MARK: - Collection View Methods
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return appDelegate.memes.count

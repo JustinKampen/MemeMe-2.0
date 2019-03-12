@@ -8,17 +8,17 @@
 
 import UIKit
 
-// MARK: - MemeDetailViewController: UIViewController
+// MARK: MemeDetailViewController: UIViewController
 
 class MemeDetailViewController: UIViewController {
     
-    // MARK: Outlets and Properties
+    // MARK: - Outlets and Properties
     
     @IBOutlet weak var memedImageView: UIImageView!
     
     var meme: Meme?
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

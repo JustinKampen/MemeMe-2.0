@@ -8,11 +8,11 @@
 
 import UIKit
 
-// MARK: - MemeEditorViewController: UIViewController, UINavigationControllerDelegate
+// MARK: MemeEditorViewController: UIViewController, UINavigationControllerDelegate
 
 class MemeEditorViewController: UIViewController, UINavigationControllerDelegate {
     
-    // MARK: Outlets and Properties
+    // MARK: - Outlets and Properties
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var shareButton: UIBarButtonItem!
@@ -31,7 +31,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
     
     var meme: Meme?
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,7 +50,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         unsubscribeFromKeyboardNotications()
     }
     
-    // MARK: Helper Methods
+    // MARK: - Helper Methods
     
     func configureMeme() {
         if let meme = meme {
@@ -98,7 +98,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         pickImage(from: .photoLibrary)
     }
     
-    // MARK: Navigation Bar Buttons
+    // MARK: - Navigation Bar Buttons
     
     @IBAction func cancelButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -115,7 +115,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         navigationBarButtons(enabled: false)
     }
     
-    // MARK: Showing and Hiding Keyboard
+    // MARK: - Showing and Hiding Keyboard
     
     func subscribeToKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -143,7 +143,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         view.frame.origin.y = 0
     }
     
-    // MARK: Create Memed Image and Save/Share
+    // MARK: - Create Memed Image and Save/Share
     
     func save() {
         let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image!, memedImage: generateMemedImage())

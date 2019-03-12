@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - Meme
+// MARK: Meme
 
 struct Meme {
     var topText: String

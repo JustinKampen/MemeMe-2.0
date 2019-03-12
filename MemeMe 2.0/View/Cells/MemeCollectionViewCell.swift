@@ -8,11 +8,11 @@
 
 import UIKit
 
-// MARK: - MemeCollectionViewCell: UICollectionViewCell
+// MARK: MemeCollectionViewCell: UICollectionViewCell
 
 class MemeCollectionViewCell: UICollectionViewCell {
     
-    // MARK: Outlets
+    // MARK: - Outlets
     
     @IBOutlet weak var memeImageView: UIImageView!
 }

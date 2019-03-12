@@ -8,17 +8,17 @@
 
 import UIKit
 
-// MARK: - MemeTableViewController: UIViewController
+// MARK: MemeTableViewController: UIViewController
 
 class MemeTableViewController: UIViewController {
     
-    // MARK: Outlets and Properties
+    // MARK: - Outlets and Properties
     
     @IBOutlet weak var tableView: UITableView!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,7 +37,7 @@ class MemeTableViewController: UIViewController {
 
 extension MemeTableViewController: UITableViewDataSource, UITableViewDelegate {
     
-    // MARK: Table View Methods
+    // MARK: - Table View Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return appDelegate.memes.count

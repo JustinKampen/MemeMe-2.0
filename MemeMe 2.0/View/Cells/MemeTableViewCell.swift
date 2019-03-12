@@ -8,17 +8,17 @@
 
 import UIKit
 
-// MARK: - MemeTableViewCell: UITableViewCell
+// MARK: MemeTableViewCell: UITableViewCell
 
 class MemeTableViewCell: UITableViewCell {
     
-    // MARK: Outlets
+    // MARK: - Outlets
 
     @IBOutlet weak var memeImageView: UIImageView!
     @IBOutlet weak var memeTopLabel: UILabel!
     @IBOutlet weak var memeBottomLabel: UILabel!
 
-    // MARK: Setup Table View Cell
+    // MARK: - Setup Table View Cell
     
     func fillCell(_ meme: Meme) {
         memeImageView.image = meme.originalImage
